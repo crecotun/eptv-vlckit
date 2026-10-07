@@ -1,0 +1,1293 @@
+{
+  "build_record": {
+    "schema_version": 1,
+    "vlckit_version": "4.0.0a24",
+    "distribution_revision": "6cbc4e7b248aa51ec0906697abb30ecae47194b7",
+    "build_revision": "462579346dceefe2f2b9f901fab7c92b12ad9511",
+    "pipeline_url": "https://code.videolan.org/videolan/VLCKit/-/pipelines/737986",
+    "job_url": "https://code.videolan.org/videolan/VLCKit/-/jobs/2809436",
+    "raw_log_url": "https://code.videolan.org/videolan/VLCKit/-/jobs/2809436/raw",
+    "raw_log_sha256": "7a8960b051273dc89d4ab7829c3a193194896785812a3c5b4d0e45d018449d67",
+    "artifact_sha256": "c61a42052ec4c1315325fba81f8893f4ccf639d92bf61dd1b3c37c3a2f26b8e3",
+    "vlc_base_revision": "5dd4aebdabf4a625822036bda08a24a91295158c",
+    "vlc_patched_tree": "30338181539d30e1676feca4690f306082107c1e",
+    "platforms": {
+      "macos": {
+        "build_argument": "-xf",
+        "fingerprint": "4.0.0-dev-38816-gba1f1ef1b2"
+      },
+      "tvos": {
+        "build_argument": "-ft",
+        "fingerprint": "4.0.0-dev-38816-g2d998d8f90"
+      }
+    }
+  },
+  "platform_inputs": {
+    "macos": [
+      "aom",
+      "ass",
+      "dav1d",
+      "dvbpsi",
+      "ebml",
+      "ffmpeg",
+      "flac",
+      "fluidlite",
+      "freetype2",
+      "fribidi",
+      "gcrypt",
+      "glad",
+      "glslang",
+      "gpg-error",
+      "gsm",
+      "harfbuzz",
+      "iconv",
+      "jinja",
+      "jpeg",
+      "lame",
+      "libarchive",
+      "libaribcaption",
+      "libdsm",
+      "libebur128",
+      "libnoidea",
+      "libplacebo",
+      "librist",
+      "libtasn1",
+      "libxml2",
+      "live555",
+      "markupsafe",
+      "matroska",
+      "meson-machinefile",
+      "modplug",
+      "mpg123",
+      "mysofa",
+      "nfs",
+      "ogg",
+      "openapv",
+      "opencv4",
+      "openjpeg",
+      "opus",
+      "png",
+      "protobuf",
+      "rnnoise",
+      "shout",
+      "smb2",
+      "soxr",
+      "spatialaudio",
+      "speex",
+      "speexdsp",
+      "ssh2",
+      "taglib",
+      "theora",
+      "upnp",
+      "utfcpp",
+      "vorbis",
+      "vpx",
+      "vulkan-headers",
+      "zlib",
+      "zvbi"
+    ],
+    "tvos": [
+      "ass",
+      "dav1d",
+      "dvbpsi",
+      "ebml",
+      "ffmpeg",
+      "flac",
+      "fluidlite",
+      "freetype2",
+      "fribidi",
+      "gcrypt",
+      "glad",
+      "glslang",
+      "gpg-error",
+      "gsm",
+      "harfbuzz",
+      "jinja",
+      "jpeg",
+      "lame",
+      "libaribcaption",
+      "libdsm",
+      "libebur128",
+      "libnoidea",
+      "libplacebo",
+      "librist",
+      "libtasn1",
+      "libxml2",
+      "live555",
+      "markupsafe",
+      "matroska",
+      "meson-machinefile",
+      "modplug",
+      "mpg123",
+      "mysofa",
+      "nfs",
+      "ogg",
+      "openapv",
+      "opencv4",
+      "openjpeg",
+      "opus",
+      "png",
+      "rnnoise",
+      "shout",
+      "smb2",
+      "soxr",
+      "spatialaudio",
+      "speex",
+      "speexdsp",
+      "ssh2",
+      "taglib",
+      "theora",
+      "twolame",
+      "upnp",
+      "utfcpp",
+      "vorbis",
+      "vpx",
+      "vulkan-headers",
+      "zlib",
+      "zvbi"
+    ]
+  },
+  "sources": {
+    "aom": {
+      "filename": "libaom-3.15.0.tar.gz",
+      "sha512": "68712a22e6912cdc16a208a62b4bd3a21fd4840924ed09191a4b85717bb6412b306ef302037e2ec4b524cdfb3c63ea2743671b989d84e45eca9c962eaa4d466b",
+      "sha256": "ea08c38ecc078bc85bb1b691020e52b06250f1a81fe7ca5b624629225081af96",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "4764a286d8b2faeaf42f4418e7d7a28d58fc8fd4d00a3d0a7f44b0a4099de7f2"
+        },
+        {
+          "path": "PATENTS",
+          "sha256": "661fb8e504744e95587b556b94a58343448300606a41bea8c7a9b97125696e61"
+        },
+        {
+          "path": "third_party/fastfeat/LICENSE",
+          "sha256": "499041ddee5227b6f29ca06c17803e5fe24d60f243c69635cd76b7ba08d0ddd5"
+        },
+        {
+          "path": "third_party/googletest/src/LICENSE",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "path": "third_party/highway/LICENSE-BSD3",
+          "sha256": "d25e82e26acd42ca3ccc9993622631163425b869b9e16284226d534cff6470f2"
+        },
+        {
+          "path": "third_party/libwebm/LICENSE.TXT",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+        },
+        {
+          "path": "third_party/libwebm/PATENTS.TXT",
+          "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c"
+        },
+        {
+          "path": "third_party/libyuv/LICENSE",
+          "sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f"
+        },
+        {
+          "path": "third_party/vector/LICENSE",
+          "sha256": "ff6c857ce2708e87701323078aef115c1872a1f80a9649f86dc899b48083bc60"
+        },
+        {
+          "path": "third_party/x86inc/LICENSE",
+          "sha256": "719d8fa235f2068e0ae6d6a7dceb0a7720d7840f0f0ebed29957989e6ded3cd8"
+        }
+      ]
+    },
+    "ass": {
+      "filename": "libass-0.17.5.tar.xz",
+      "sha512": "b9e06023e9f5760ba1946f8dbcd8c411908bc6c77030099098f8252edabd31c98a6523cffb7cccf7b62e12bb374d136600a98e29a7916ccc218100ff694bfb7c",
+      "sha256": "2dca25c0e0c837ddf00b52011b3f82cac1e4ddd3ad018227806b0c2288864acc",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "f7e30699d02798351e7f839e3d3bfeb29ce65e44efa7735c225464c4fd7dfe9c"
+        }
+      ]
+    },
+    "dav1d": {
+      "filename": "dav1d-1.5.4.tar.xz",
+      "sha512": "75ab7c922bc9647d73534c9f6c95a514748557adbf7a4debf95eee52ef1db681012cbaad165a46141d904cdd01c1e6319cdea33d254afb5c6b3d968679e55b98",
+      "sha256": "686616b7c69eb88d44459391ab25cac13b6647a3b288835c5784e71c1514a5c5",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "dd92c3c2247c5651606fc23a5e2d6a1ebc5ace9a3e49cbde0e12f05ad1cb1ee5"
+        },
+        {
+          "path": "doc/PATENTS",
+          "sha256": "335eca574598bf4ca181b12f708d6669e5a5e78c8e1513e5b35fa1f03901484b"
+        }
+      ]
+    },
+    "dvbpsi": {
+      "filename": "libdvbpsi-1.3.3.tar.bz2",
+      "sha512": "70f9e783a947e026ea50afe98ad2b3bfce075bd8d76932f73a6253b077a3a180aa632e9a1fff20308e2f0f3f881d727b4e4aad9b8da2b384edf9a3a0f9eacc69",
+      "sha256": "02b5998bcf289cdfbd8757bedd5987e681309b0a25b3ffe6cebae599f7a00112",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        }
+      ]
+    },
+    "ebml": {
+      "filename": "libebml-1.4.6.tar.xz",
+      "sha512": "86b469a1c1352e9ea6f581267ab8fc357575f2e410a3a732b12203575744667b152c135cf314978500d6a19fac4ef4015b89fdcfcca43f5bfc49f63e27ecbce2",
+      "sha256": "d06cf1d5ad89390389eeb1eb7d50f70b55ac7538b19aeac8859eed3f2a9908dc",
+      "license_files": [
+        {
+          "path": "LICENSE.LGPL",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        }
+      ]
+    },
+    "ffmpeg": {
+      "filename": "ffmpeg-9.0.tar.xz",
+      "sha512": "2e2fea606b290c306bdef13b4c8efb7a4b138ffa16f94f608f85877f5e7ca93980bda8219eeeed8343c463d302c7a2c46b14902ccbbe1e53483f9411b31b9c69",
+      "sha256": "7f607a00dd0d28a729d5a4811205812eef01cf6ef6155025febb6f36a9062d52",
+      "license_files": [
+        {
+          "path": "COPYING.LGPLv2.1",
+          "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30"
+        },
+        {
+          "path": "COPYING.GPLv2",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "COPYING.LGPLv3",
+          "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+        },
+        {
+          "path": "COPYING.GPLv3",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "tests/checkasm/ext/src/html_data/LICENSE",
+          "sha256": "0fd2c601fb2ead2add56807b7e32664da8d973b9835a422464f210bfea997a52"
+        },
+        {
+          "path": "tests/checkasm/ext/LICENSE",
+          "sha256": "a2dc8194271e5989c0622531c645a7b41af5da92eeb2531e4f2a3ec31023bc52"
+        },
+        {
+          "path": "LICENSE.md",
+          "sha256": "2e1d16c72fd74e12063776371da757322f8b77589386532f4fd8634bde7de1af"
+        }
+      ]
+    },
+    "flac": {
+      "filename": "flac-1.5.0.tar.xz",
+      "sha512": "34c9193b804e990b0828a5759e4d7ef1d1859174262d3b305d03e65285edb35c7f429e8071d9dd2c6da0c16e842b40b439bf215704636ae15dd5886151f0d17a",
+      "sha256": "f2c1c76592a82ffff8413ba3c4a1299b6c7ab06c734dee03fd88630485c2b920",
+      "license_files": [
+        {
+          "path": "COPYING.GPL",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "COPYING.FDL",
+          "sha256": "c5d2b95c2538d2e41d8eedd9ecc750cd5fee085c7bb2bc3e2f95f4e59cc0b10d"
+        },
+        {
+          "path": "COPYING.Xiph",
+          "sha256": "7866ee98760fc1f0156b4fe6bf530257e02be487ab3fd94e2b63799dd32d6b2c"
+        },
+        {
+          "path": "COPYING.LGPL",
+          "sha256": "5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a"
+        }
+      ]
+    },
+    "fluidlite": {
+      "filename": "fluidlite-b0f187b404e393ee0a495b277154d55d7d03cbeb.tar.xz",
+      "git_revision": "b0f187b404e393ee0a495b277154d55d7d03cbeb",
+      "git_url": "https://github.com/divideconcept/FluidLite.git",
+      "sha256": "3b6ae2955d06267fae4953200917084c1e8a3eb5afb0e56c8679d004afa6f5c9",
+      "tree": "4a71d633231a50f8acf9ff6e2a8ef8bb60baf784",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "a5564e99fd7f49e1344152a8c5bc1d420d5f973b30e010946764db0b5b9e668c"
+        }
+      ]
+    },
+    "freetype2": {
+      "filename": "freetype-2.14.3.tar.xz",
+      "sha512": "43de86ea70b4b47f6efaae67f3440f65a24ffac29dc6d11203a9764e4f1a749ce1ba7645acd23525220b3ba12ddad8687b962b9f1254e2c0a86070854e85d5a0",
+      "sha256": "36bc4f1cc413335368ee656c42afca65c5a3987e8768cc28cf11ba775e785a5f",
+      "license_files": [
+        {
+          "path": "docs/FTL.TXT",
+          "sha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f"
+        },
+        {
+          "path": "src/tools/update-copyright-year",
+          "sha256": "f3e4b6f122dce96b6ba85c3d600fd19a766ab5e0fd0cbdeee785d0d88f111d3a"
+        },
+        {
+          "path": "src/tools/no-copyright",
+          "sha256": "3e2c8db4e09e12e9a138ba7ba8c0b762eff36802c6c1273d73ac049d4949a298"
+        },
+        {
+          "path": "src/tools/update-copyright",
+          "sha256": "ae5b05f1d3f5235eb91ce41518be95022443f68bce5d200b6e1cc1fb57a5017e"
+        },
+        {
+          "path": "src/base/ftpatent.c",
+          "sha256": "e6740b91751c39d81ecb7a93e0ede78ed28588254734d4bac8badb0e807435fc"
+        },
+        {
+          "path": "LICENSE.TXT",
+          "sha256": "bd36c8b474855fa294c2ec5c184544478ef3720aad37d65a6296a4f264fd2d3b"
+        }
+      ]
+    },
+    "fribidi": {
+      "filename": "fribidi-1.0.16.tar.xz",
+      "sha512": "e3a56f36155f6813e3609473639fc533de742309f561c463012dc90b412a1ac7694b765d92669b2cbfaee973ca0e92fa5e926e68a1a078921f26ef17d82ab651",
+      "sha256": "1b1cde5b235d40479e91be2f0e88a309e3214c8ab470ec8a2744d82a5a9ea05c",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+        }
+      ]
+    },
+    "gcrypt": {
+      "filename": "libgcrypt-1.12.2.tar.bz2",
+      "sha512": "dc1a4a6c00a0d84d90c8d71f4bd121b968c80df74137d6e8867f1f4cc014a539efb5238c1a1429d7cb95e493a40718fc19252edc592ffe0f43057b372896591c",
+      "sha256": "7ce33c2492221a0436f96a8500215e9f3e3dcb5fd26a757cd415e7a843babd5e",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+        },
+        {
+          "path": "COPYING.LIB",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "LICENSES",
+          "sha256": "289f9561592dbcee8f1f9a1aca26df3cb0dbf3a989dbdd08effac19a8192c834"
+        }
+      ]
+    },
+    "glad": {
+      "filename": "glad-2.0.8.tar.gz",
+      "sha512": "ec964d0080c9714803f0464492b237039d2bede805d21aa9e487f3bf910447fd6440eeca59f3795dc4d5dd3b3df35101714fa21ea19eb29f6a021864a2310acd",
+      "sha256": "44f06f9195427c7017f5028d0894f57eb216b0a8f7c4eda7ce883732aeb2d0fc",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "cbb325cd4ac5bd06717ffa34a322b984f9d285e4c67c8ca1b7380d6ef08c2a77"
+        }
+      ]
+    },
+    "glslang": {
+      "filename": "glslang-12.3.1.tar.gz",
+      "sha512": "201a295e47db552f8233d5f3072e7f03e36ad4d6f867a5f63d846e04d4276a94d26ff380f17128cbe24c031b47bbbf51a2c1ac0ad7a0140634be577f2d7343f8",
+      "sha256": "a57836a583b3044087ac51bb0d5d2d803ff84591d55f89087fc29ace42a8b9a8",
+      "license_files": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "adb783e734e906d1f46db5df29991dbde84bdb0ceab502ac2febb44fe3c2b5f4"
+        },
+        {
+          "path": "license-checker.cfg",
+          "sha256": "e6ead88c5894007be86546cfd24d6c0b9fafcbf832fc27d8330eb7d46cedc84a"
+        }
+      ]
+    },
+    "gpg-error": {
+      "filename": "libgpg-error-1.61.tar.bz2",
+      "sha512": "3e59eb52d061709fd8dfe56a4b36d2d5b49dd5e0c90c283899669d6a355286cb3a3f851631f8456c78c48b652bb31a4c1f8b081ccdf87e5db64b313d141a7670",
+      "sha256": "7a85413f2bc354f4f8aa832b718af122e48965e9e0eb9012ee659c13c6385c93",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+        },
+        {
+          "path": "COPYING.LIB",
+          "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+        }
+      ]
+    },
+    "gsm": {
+      "filename": "gsm-1.0-pl22.tar.gz",
+      "sha512": "f4284f096ed4d606ddece5c1b28edb63feacc26a0b664f1350c040dbf50113d27bedfd9896bf1620cb4fc3a6c8f6a5244955a6c625ded833dcee607c63c97dd2",
+      "sha256": "f0072e91f6bb85a878b2f6dbf4a0b7c850c4deb8049d554c65340b3bf69df0ac",
+      "license_files": [
+        {
+          "path": "COPYRIGHT",
+          "sha256": "81c68a3374937ed9b5e4929c709e81a2c4b35b5d1f450ecf8c473e2daea46ff6"
+        }
+      ]
+    },
+    "harfbuzz": {
+      "filename": "harfbuzz-14.2.1.tar.xz",
+      "sha512": "481dca68900e57895d3671baf0595c2d3a26f4f08d0db5662e83089f0d0ff6dc0c28c64c2811eb0f812b0525ed428e90db44f091a88bef47ace2f97d8285b013",
+      "sha256": "a54a5d8e9380a41fbb762ce367bcbf7704792dfca0d93f1bbca86c5a57902e0e",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+        },
+        {
+          "path": "src/ms-use/COPYING",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "test/COPYING",
+          "sha256": "9b35b8485f69cd298fccbb3c40a827dc06cf1185553bef827903497d2944a8d7"
+        },
+        {
+          "path": "test/shape/data/aots/COPYING",
+          "sha256": "f55f74bf740db07bb032a90aa74af4307adea3d489c1ccba12453cf0c0a764cb"
+        },
+        {
+          "path": "test/shape/data/text-rendering-tests/COPYING",
+          "sha256": "d24039e4d22c9bc72096f6174374539d92a3d6e1163938546ec59179fe095e6f"
+        }
+      ]
+    },
+    "iconv": {
+      "filename": "libiconv-1.18.tar.gz",
+      "sha512": "a55eb3b7b785a78ab8918db8af541c9e11deb5ff4f89d54483287711ed797d87848ce0eafffa7ce26d9a7adb4b5a9891cb484f94bd4f51d3ce97a6a47b4c719a",
+      "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8",
+      "license_files": [
+        {
+          "path": "COPYING.LIB",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "libcharset/COPYING.LIB",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        }
+      ]
+    },
+    "jinja": {
+      "filename": "jinja-3.1.6.tar.gz",
+      "sha512": "a3558f89d9d60676583bfc05e8987e9c486c2335affb71c9733b93040d56a2f97fb036974f1be1bf82c5b0767f482b2e795d58ea35456fcfe7e705f5e6b7a778",
+      "sha256": "2074b22a72caa65474902234b320d73463d6d4c223ee49f4b433495758356337",
+      "license_files": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b"
+        },
+        {
+          "path": "docs/license.rst",
+          "sha256": "1e07e9c25f2618a040560b70e63f42259eab24e558d0f3532e6163d751cb4eea"
+        }
+      ]
+    },
+    "jpeg": {
+      "filename": "libjpeg-turbo-3.1.4.1.tar.gz",
+      "sha512": "d82c2c2bd8abb1b88a245cece407a4cf65c378003e105a99a20ae4e7e3a7282b64874c3e7d8c003e83b43c990d43f860066e6ac57c143f8b3b9732d6bca7d94a",
+      "sha256": "ecae8008e2cc9ade2f2c1bb9d5e6d4fb73e7c433866a056bd82980741571a022",
+      "license_files": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "e10114e6e40f3d0311c401ca25245ac5ef459a43c20f976fd63f03e816f5741f"
+        },
+        {
+          "path": "README.ijg",
+          "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6"
+        },
+        {
+          "path": "java/doc/legal/ADDITIONAL_LICENSE_INFO",
+          "sha256": "a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916"
+        },
+        {
+          "path": "java/doc/legal/LICENSE",
+          "sha256": "4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726"
+        },
+        {
+          "path": "release/License.rtf",
+          "sha256": "d26120ab237f87dea10aa4fa7fd4243cadffd26e54eb2f3903d5fb0f8ed336b2"
+        }
+      ]
+    },
+    "lame": {
+      "filename": "lame-3.100.tar.gz",
+      "sha512": "0844b9eadb4aacf8000444621451277de365041cc1d97b7f7a589da0b7a23899310afd4e4d81114b9912aa97832621d20588034715573d417b2923948c08634b",
+      "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "bfe4a52dc4645385f356a8e83cc54216a293e3b6f1cb4f79f5fc0277abf937fd"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "7a40cbd8818c57e5285e83c772a459a996d1662c824a879836b97b473c07cae4"
+        },
+        {
+          "path": "debian/copyright",
+          "sha256": "1f27f9f698183275bd615c1140b7bf6e498750e9280597c6eb39790e54ae809b"
+        }
+      ]
+    },
+    "libarchive": {
+      "filename": "libarchive-3.8.9.tar.xz",
+      "sha512": "f37425417a9e3fdc194a2b892137452ddba6601c69e822598692d4d776c573a90e70aac4598d47c915615facc45d0c83fc46c24856ddf04afd7494b63bb9f137",
+      "sha256": "888c934f9d95648ecb9163dc8e23ab80a476ecb81a8f1154704a227b5b676dde",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "30e556b3959e3985d66efefec5eaac51d4995053caa1d3cffe6eb916f146f229"
+        }
+      ]
+    },
+    "libaribcaption": {
+      "filename": "libaribcaption-1.1.1.tar.gz",
+      "sha512": "3f3c802ae68734126d9b4a0525b3353af4c1a3807cd21bfa04b89f2092fe565cb2413bcdd0b762313d40b7e0ab75c7e8066bf4a1879c16637f35ee164f6ef6a4",
+      "sha256": "278d03a0a662d00a46178afc64f32535ede2d78c603842b6fd1c55fa9cd44683",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "5149f1ce4fe89190d86bfb440456701a3a7406fc2b19ef0d8b57661f62b32c04"
+        }
+      ]
+    },
+    "libdsm": {
+      "filename": "libdsm-0.4.3.tar.xz",
+      "sha512": "4abe2318aa5d63397404ce87fc42be30d364dffef3bdf6e081a2bb3ac4f011f39fa8acb5ba06361e94795a308df321b077e7a3cf2ec10d5e1e6c9b912cbbd8ba",
+      "sha256": "d31921bd6f6a23878266b945731f7d57505472ef85d66f944c43b9f8eacc2a8a",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "806b80ec9ff3b429533869fd5b0e47cad4e572e2c338f1994fa5f912b44d8008"
+        }
+      ]
+    },
+    "libebur128": {
+      "filename": "libebur128-1.2.6.tar.gz",
+      "sha512": "ab188c6d32cd14613119258313a8a3fb1167b55501c9f5b6d3ba738d674bc58f24ac3034c23d9730ed8dc3e95a23619bfb81719e4c79807a9a16c1a5b3423582",
+      "sha256": "baa7fc293a3d4651e244d8022ad03ab797ca3c2ad8442c43199afe8059faa613",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "d6b4754bb67bdd08b97d5d11b2d7434997a371585a78fe77007149df3af8d09c"
+        }
+      ]
+    },
+    "libnoidea": {
+      "filename": "libnoidea-b20c2d0a6f606db2c4649f368b9735a2599d6a2c.tar.xz",
+      "git_revision": "b20c2d0a6f606db2c4649f368b9735a2599d6a2c",
+      "git_url": "https://code.videolan.org/videolan/libnoidea.git",
+      "sha256": "7feb3ffb0a6e40d7d5c193adaad7e8b46d983e76ada9316a9a71ff4a28a47026",
+      "tree": "2a35859efb1a8c43a7ea04b0bcd8bcd69cdef6b9",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        }
+      ]
+    },
+    "libplacebo": {
+      "filename": "libplacebo-v5.264.1.tar.gz",
+      "sha512": "305f43b71f078f4113def43c444df667dfbdd2a6a34d3b457b15da0b3499ca97ec9a8acbd151d58c8e1a593ace3d8aa61067b32556c6bae451efbb217d60a731",
+      "sha256": "9eb0c198f58d994f1c0d173dd37647d4d07d27972412c48ab758e984503c787b",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b3aa400aca6d2ba1f0bd03bd98d03d1fe7489a3bbb26969d72016360af8a5c9d"
+        },
+        {
+          "path": "demos/LICENSE",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        }
+      ]
+    },
+    "librist": {
+      "filename": "librist-v0.2.20.tar.gz",
+      "sha512": "3553d5db0cf67ab07ff85b55e4948958aa59251c236efa7b6605fce5c8e9552bce967cbfabdb1430cb21c1343b9eeebb582aaeb64bdb569b4cbe7493b8f3844a",
+      "sha256": "9e40eeb87f014790531ad41326cc271b930a65962e4b15231b301fc59b29fe31",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "b9841591a3452ee30033d8e3586c7b1244a0b2fc1dc6cb04576957c313cb2792"
+        },
+        {
+          "path": "contrib/mbedtls/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    "libtasn1": {
+      "filename": "libtasn1-4.21.0.tar.gz",
+      "sha512": "6a581c4c072b168bf29a0dec7e59a9329a798e392b7d1033791d0e3166a5d1164e2a7065373a84018d500a01563657900c318b1fd437c227c3174b754f9998d3",
+      "sha256": "1d8a444a223cc5464240777346e125de51d8e6abf0b8bac742ac84609167dc87",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "COPYING.LESSERv2",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "build-aux/update-copyright",
+          "sha256": "bf091b6567233a12d9dbd9c2668e07915741199b0815a05b8be74353f58033d4"
+        }
+      ]
+    },
+    "libxml2": {
+      "filename": "libxml2-2.15.3.tar.xz",
+      "sha512": "6f7f1aabd012454553e851bd1ee548fbd14d21c576f2b2ab9eeedab3dfba51392083f74b34f060e9b538baeea212cdb462b8669c214c711771fb9a897fdc1c60",
+      "sha256": "78262a6e7ac170d6528ebfe2efccdf220191a5af6a6cd61ea4a9a9a5042c7a07",
+      "license_files": [
+        {
+          "path": "Copyright",
+          "sha256": "5d4873884a890122a4b9b20ad56ac6f7da1d796a5bfcf04a427970ac96217626"
+        },
+        {
+          "path": "test/html-tokenizer/NOTICE",
+          "sha256": "d6a2cb265a0a249a234b89eeffa7f316ebe5bff546672a0a2b1a861dd2238460"
+        },
+        {
+          "path": "result/html-tokenizer/NOTICE",
+          "sha256": "d6a2cb265a0a249a234b89eeffa7f316ebe5bff546672a0a2b1a861dd2238460"
+        }
+      ]
+    },
+    "live555": {
+      "filename": "live.2016.10.21.tar.gz",
+      "sha512": "10846fd6d5482bbea131ae805137077997e9dec242665e3c01d699d5584154c65049e8c520ea855599e554154a148e61fea77b592d97c814a4a98c773658d8f5",
+      "sha256": "65b1aa7ec7c487466020e980d1fd68007390f7575b384c1d0fed49b94ba2c240",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "d75cbbcd32b1a2a081472184116e9fd330205c9e55c3e9119203022072294106"
+        }
+      ]
+    },
+    "lua": {
+      "filename": "lua-5.4.4.tar.gz",
+      "sha512": "af0c35d5ba00fecbb2dd617bd7b825edf7418a16a73076e04f2a0df58cdbf098dc3ff4402e974afd789eb5d86d2e12ec6df9c84b99b23656ea694a85f83bcd21",
+      "sha256": "164c7849653b80ae67bec4b7473b884bf5cc8d2dca05653475ec2ed27b9ebf61",
+      "license_files": [
+        {
+          "path": "doc/readme.html",
+          "sha256": "2556ac7198243f9f83130b9c81016e1904f7b30351481f1c28e02475dbd237fb"
+        }
+      ]
+    },
+    "markupsafe": {
+      "filename": "markupsafe-2.1.5.tar.gz",
+      "sha512": "cde91bce963272c5d60e6640351a2c76f7b7413add45105995d6998972b7b1fec3cb8b1520daee58bf99bd32732c1f6a70c4b6c914e2fe6b7fcf3872282cc30e",
+      "sha256": "307f63295d17f178b7d3af5968fb828e34086d5d66fec505b630a1e5f5b3328b",
+      "license_files": [
+        {
+          "path": "LICENSE.rst",
+          "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+        },
+        {
+          "path": "docs/license.rst",
+          "sha256": "c9362a7258a11c84a8f7e825ccbbb5c425c6fc02368d3aee6494533fb99ba1f4"
+        }
+      ]
+    },
+    "matroska": {
+      "filename": "libmatroska-1.7.2.tar.xz",
+      "sha512": "86b21a0ff3e5149a2824a9f21f9460179d02aecf477f2b9f1f92ce2f991033bd0cb209d81a4aeee2c0c5ffc193dac57a84dd4f529939b12c900f2cfb881618fb",
+      "sha256": "f3e4d406daf7f1399962c43940e4a87de089474d5bcfbf2e6ca516e98bb87cfc",
+      "license_files": [
+        {
+          "path": "LICENSE.LGPL",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        }
+      ]
+    },
+    "modplug": {
+      "filename": "libmodplug-0.8.9.0.tar.gz",
+      "sha512": "880e10154fd367ee24ace53ca7e32a5c1fee7dfff1f934e6499944c12779427da63e2f55f8d6ce25db0a42a5b4424053bf64305b31dbfc4ef6a8909924d655fd",
+      "sha256": "457ca5a6c179656d66c01505c0d95fafaead4329b9dbaa0f997d00a3508ad9de",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "49942e7b3b175f549e751feb08b5270ca6f6c5fb7a1be9f9517db275ec32c92e"
+        }
+      ]
+    },
+    "mpg123": {
+      "filename": "mpg123-1.33.6.tar.bz2",
+      "sha512": "83d8fca128b1fd39e336e6052837b16951360d6f1a47919e00d4b7285717ee7cd4dd56c24bd873316ba6969081fe619cda93ebb20771aed052c6e9d07657f2ab",
+      "sha256": "929a7c18ba662b8927aed4de229ad9ae8ab2b4806dd0f30b90113eb1b4e2195a",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "c22482728a634a8dfdb4ff72a96d4c1ed64cd8f3e79335c401751ac591609366"
+        },
+        {
+          "path": "doc/PATENTS",
+          "sha256": "a16db5483cc2ab07a81b152fe9147f0ef196d38d26477c7b8c803aff6522e8bc"
+        },
+        {
+          "path": "doc/LICENSE",
+          "sha256": "cca79ea6fc0a7715e52450df2d86311f990e85067dd13f4d7f5a88d4fd23a07c"
+        }
+      ]
+    },
+    "mysofa": {
+      "filename": "libmysofa-1.2.1.tar.gz",
+      "sha512": "2058c94cd09aeeabe40975edd320d7447bd9e535108f32b2a5305c023c7bf89f0c2f44df182390b7e4be8f6ffc9b09c2e35817896bb5e63d3ec9f1bd5b7e972c",
+      "sha256": "94cb02e488de4dc0860c8d23b29d93d290bb0a004d4aa17e1642985bba158ee9",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "9c8713ccc5d6d93d20c7a1cfcb876e64baf551bfbe67faa4e60d39cda9ffd023"
+        },
+        {
+          "path": "tests/LICENSE.CIPIC_subject_003_hrir_final",
+          "sha256": "78149b9a8138d9fdcbd77b66e554711a1a2a5451d16b432b5eaec6d642697d85"
+        },
+        {
+          "path": "tests/LICENSE.D1_48K_24bit_0.3s_FIR_SOFA",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "tests/LICENSE.FHK_HRIR_L2354",
+          "sha256": "47c326d67143bb68c008a900c954c8a6779bdafa25d350d12c57d532c3a32200"
+        },
+        {
+          "path": "tests/LICENSE.H20_44K_16bit_256tap_FIR_SOFA",
+          "sha256": "44ba2315604e3fbe0f11c0d9cbb6114159ba74c3f31b5a72b2493476b3f9b44a"
+        },
+        {
+          "path": "tests/LICENSE.LISTEN_1002_IRC_1002_C_HRIR",
+          "sha256": "29661b4a131466c1d5cdb786db0e531244c14850af0d3fb80fb8c801bdbe7145"
+        },
+        {
+          "path": "tests/LICENSE.MIT_KEMAR_pinnae",
+          "sha256": "548b43283652608c38ed82accb918fae135885016de78c969cbd8cd7215d15ec"
+        },
+        {
+          "path": "tests/LICENSE.TU-Berlin_QU_KEMAR_anechoic",
+          "sha256": "84be1cf7d2cf8ea106fcf1f24e360cd922a05f80c6172e3f70608b0eaed50460"
+        },
+        {
+          "path": "tests/LICENSE.pulse",
+          "sha256": "fabb8e1099a0812e0be1951a94cdda0def9b3e60f1aa5b649a0dbe01fc637fc0"
+        },
+        {
+          "path": "windows/third-party/sys/LICENSE",
+          "sha256": "818fd40b46dfbe838f4dc0957bfe44afc4b35d450237723b82d793a0403f3c77"
+        },
+        {
+          "path": "windows/third-party/zlib-1.2.11/LICENSE",
+          "sha256": "05b547d6a157efb1659997b605b63cd36f2e3f30d167b5a6826ecdde052d154f"
+        }
+      ]
+    },
+    "nfs": {
+      "filename": "libnfs-6.0.2.tar.gz",
+      "sha512": "539790ab98aac7b2f25755b745d1f5e016518f1adb3748b8c58df187048bc31e091915d59e6359bb95c49dd986361cbbf2536edcda02598b0fac236762b61a46",
+      "sha256": "4e5459cc3e0242447879004e9ad28286d4d27daa42cbdcde423248fad911e747",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "edd960c0142b8ada98b43b6396b78f4e557b0bc70ac601a51e397ad04070e2c5"
+        },
+        {
+          "path": "LICENCE-BSD.txt",
+          "sha256": "d9406ced95457941032aa11d04623b8ab71f2827a3395ebef137aec475be35b1"
+        },
+        {
+          "path": "LICENCE-GPL-3.txt",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "LICENCE-LGPL-2.1.txt",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        }
+      ]
+    },
+    "ogg": {
+      "filename": "libogg-1.3.6.tar.xz",
+      "sha512": "2168548e57e23fadca4aa66351214b23d699bc3aa47f5d065f8b583a3fe85c99333014a6aa38e4021b0e3750115b88258a6c00cac1e1496cdee5f12cdc633814",
+      "sha256": "5c8253428e181840cd20d41f3ca16557a9cc04bad4a3d04cce84808677fa1061",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "d2ab5758336489da61c12cc5bb757da5339c4ae9001f9bb0562b4370249af814"
+        }
+      ]
+    },
+    "openapv": {
+      "filename": "openapv-0.3.0.0.tar.gz",
+      "sha512": "38bf5f541b9879337c44b5e836209325dfe2c0aae1d94eca2e9e5a36ed80c824fadcfa9f5365fff2a43418f1aab8e74061f370cba045cd3c2a89b1386338448b",
+      "sha256": "dc5cd1618a07e8b340e12562cae37d612b3a1467ee80d986c477165ae602a37e",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "7ad8e53c0c3e24e7ba64dbcad5e7706108f3dc67cf6515ef761adac0a39dab25"
+        }
+      ]
+    },
+    "opencv4": {
+      "filename": "opencv-4.4.0.tar.gz",
+      "sha512": "ce4bada7b57c1a00439eca02abcba262732d5eabfd26090f6f83642d747a9a1a7908230bcd01a2b999c509e0c43c8b0dcb2b93ac824518b79cffe533f22652bb",
+      "sha256": "bb95acd849e458be7f7024d17968568d1ccd2f0681d47fd60d34ffb4b8c52563",
+      "license_files": [
+        {
+          "path": "3rdparty/cpufeatures/LICENSE",
+          "sha256": "c870d52f42a8f93023b99a85fe68d02637d6b04e5f35bbcd7f98759adb4e4d49"
+        },
+        {
+          "path": "3rdparty/ffmpeg/license.txt",
+          "sha256": "1f9d4168b4a9a2bdd1851023735a41d0ab09ffa5fcc1a721a99ebc1d7d35a9c5"
+        },
+        {
+          "path": "3rdparty/include/opencl/LICENSE.txt",
+          "sha256": "cfaceadff07c2c9458283079cd0166872aa2d93d5c480f1f417be321aa7e0f4d"
+        },
+        {
+          "path": "3rdparty/ittnotify/src/ittnotify/LICENSE.BSD",
+          "sha256": "77cf47aa88df151faba9db8bbbfcff8e83dbe5f0ff0dac3ef76e63217f579a55"
+        },
+        {
+          "path": "3rdparty/ittnotify/src/ittnotify/LICENSE.GPL",
+          "sha256": "d91b925f4e9000a4ae1f7218fa6b3b29a411126ae93959736a72cee43027ad2c"
+        },
+        {
+          "path": "3rdparty/libjasper/LICENSE",
+          "sha256": "edf9f4257cc33a1f396f9b062ca4a01dca7c79747c7d85b8947e603e5166760e"
+        },
+        {
+          "path": "3rdparty/libjasper/copyright",
+          "sha256": "86c11bd7b94d24d6c372bd95f8d8998b8a69c7d82a91dd0247878b28223feabe"
+        },
+        {
+          "path": "3rdparty/libjpeg-turbo/LICENSE.md",
+          "sha256": "69e570a251515ced17d4492256d57c89db77ed949652f88a44c80c1ca9607920"
+        },
+        {
+          "path": "3rdparty/libpng/LICENSE",
+          "sha256": "bf5e22b9dce8464064ae17a48ea1133c3369ac9e1d80ef9e320e5219aa14ea9b"
+        },
+        {
+          "path": "3rdparty/libtiff/COPYRIGHT",
+          "sha256": "fbd6fed7938541d2c809c0826225fc85e551fdbfa8732b10f0c87e0847acafd7"
+        },
+        {
+          "path": "3rdparty/libwebp/COPYING",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+        },
+        {
+          "path": "3rdparty/openexr/LICENSE",
+          "sha256": "14eba5f05238f57c77e94f0ebd29a0b3736ba0456ff990cda16e21b6903ac453"
+        },
+        {
+          "path": "3rdparty/protobuf/LICENSE",
+          "sha256": "af67c58de2e18677a0b8cb5fffbe2232aabb8eb2930e8cd684769cef3d74a262"
+        },
+        {
+          "path": "3rdparty/quirc/LICENSE",
+          "sha256": "f64a0d2030dd3bb501f303eb66097ed92cd0c63f824e515b1116dafbce5346fe"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a5a7cf90fe5ac9763baad852cf69cf9d9b89bff934a679fdc5c8fcecaeba9a25"
+        },
+        {
+          "path": "data/haarcascades/haarcascade_licence_plate_rus_16stages.xml",
+          "sha256": "4d1c44bf7a1bc4e204fa25b046ed0acffd7f713cc13fe2958b6977125c60ddea"
+        },
+        {
+          "path": "modules/core/3rdparty/SoftFloat/COPYING.txt",
+          "sha256": "0c5b08365136da52639d777f1ebfc03988b0169d80655c90c59f1b3fa3e526a2"
+        },
+        {
+          "path": "modules/dnn/src/torch/COPYRIGHT.txt",
+          "sha256": "c5ced63019efecf865d6e65d33495507ba5e744fb9d648f2a2f142a169cafae5"
+        },
+        {
+          "path": "samples/data/licenseplate_motion.jpg",
+          "sha256": "ea6fa9cea75df91bec656d1d3b903111a9c0708c6a3b88f405a5156de38ff9d6"
+        }
+      ]
+    },
+    "openjpeg": {
+      "filename": "openjpeg-2.5.4.tar.gz",
+      "sha512": "702a10e20caaf8209684ded7c9fcf32f5ba6a972cf2d9fcf2611cdc6a446d2c3bb60324205758e6b6f92278c8cf4ef0fbae511e6ffb45ed6e8df514db0c6ab25",
+      "sha256": "a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6"
+        },
+        {
+          "path": "src/bin/wx/OPJViewer/source/license.txt",
+          "sha256": "8081c33f6953950dcf424aa844714658b73ada0fcaea16e4487f5fa07ef0960d"
+        },
+        {
+          "path": "thirdparty/astyle/LICENSE.md",
+          "sha256": "2e8480e753b7a1d100c80920f4250b1bc9f93a18c6a5953c42b11445218cd0fb"
+        },
+        {
+          "path": "thirdparty/liblcms2/COPYING",
+          "sha256": "c725daac91a9259ce5e195683c0eeb797d345035c36ac5ba114c9fa80e11639a"
+        },
+        {
+          "path": "thirdparty/libpng/LICENSE",
+          "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e"
+        }
+      ]
+    },
+    "opus": {
+      "filename": "opus-1.6.1.tar.gz",
+      "sha512": "93742e86b2eb222808a5055e62627d142e6e7347b3d5aebb4d39b45df78ed7d437746c51eb24d724a7c865d064e9d16f4541a4ce6a82fcf7dcc23427d2252e16",
+      "sha256": "6ffcb593207be92584df15b32466ed64bbec99109f007c82205f0194572411a1",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551"
+        }
+      ]
+    },
+    "png": {
+      "filename": "libpng-1.6.58.tar.xz",
+      "sha512": "5937d6409d7ad564c9dba7969c5d39eea8bbc01936f433bf5936c872ec290dea353783f89bded91e124b3b3b15518320097de365acd3b0bcc922a0e90c94adc8",
+      "sha256": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526"
+        },
+        {
+          "path": "ci/LICENSE_MIT.txt",
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+        },
+        {
+          "path": "contrib/gregbook/COPYING",
+          "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572"
+        },
+        {
+          "path": "contrib/gregbook/LICENSE",
+          "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438"
+        },
+        {
+          "path": "contrib/pngexif/LICENSE_MIT.txt",
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+        },
+        {
+          "path": "contrib/pngminus/LICENSE.txt",
+          "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330"
+        }
+      ]
+    },
+    "protobuf": {
+      "filename": "protobuf-3.21.1.tar.gz",
+      "sha512": "370541974e9049963271ed6100c2b78a93d5c206d5ca8bcf00b423038bc3ec049e2c8025d5b306dcd0b3104b15559ac7d9d8a59e235eb94566678afb3c0cef6f",
+      "sha256": "9ccabf07bd087bca3bb37067e04bf1d7377f0d60311cf3d2aa88e7af4c49a177",
+      "license_files": [
+        {
+          "path": "third_party/googletest/googletest/LICENSE",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "path": "third_party/googletest/googlemock/scripts/generator/LICENSE",
+          "sha256": "5e0df8c845c742e76f2f64d2d9ce1b7e74a2422fddbc577ae6a56319083de0bf"
+        },
+        {
+          "path": "third_party/googletest/googlemock/LICENSE",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+        }
+      ]
+    },
+    "rnnoise": {
+      "filename": "rnnoise-0.1.1.tar.gz",
+      "sha512": "5a282a76d1c9b818bb4edb0d1de868e8d86f50cf149e3c637ee2d383a33d36db298bdad9844a5f4923373ad227e385742928ad121e663e368bdc0b85ba04b56a",
+      "sha256": "1641712c9ae31f3b364e8b2f2e0ec3ce24330e76055c151f695941b0ea5d3987",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "e2f59ff41d9d03adc3dcf3deff170f8c8cf4a6eb4a9b174762a7656d23200ffa"
+        }
+      ]
+    },
+    "shout": {
+      "filename": "libshout-2.4.6.tar.gz",
+      "sha512": "e8478cdbf9a27674c16a7b620d1576f2e31a47262b8e29b314d0f46d4e5be24b9a29790b7b226f48939bc34cacf5734fae0aa5686c7ed5879cdbd827ff8e0339",
+      "sha256": "39cbd4f0efdfddc9755d88217e47f8f2d7108fa767f9d58a2ba26a16d8f7c910",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "7a4436f9ec37603356791c87de3bc444989befd2682d29efb3d97604e04c1852"
+        },
+        {
+          "path": "src/common/avl/COPYING",
+          "sha256": "7a4436f9ec37603356791c87de3bc444989befd2682d29efb3d97604e04c1852"
+        },
+        {
+          "path": "src/common/net/COPYING",
+          "sha256": "7a4436f9ec37603356791c87de3bc444989befd2682d29efb3d97604e04c1852"
+        },
+        {
+          "path": "src/common/timing/COPYING",
+          "sha256": "7a4436f9ec37603356791c87de3bc444989befd2682d29efb3d97604e04c1852"
+        },
+        {
+          "path": "src/common/httpp/COPYING",
+          "sha256": "7a4436f9ec37603356791c87de3bc444989befd2682d29efb3d97604e04c1852"
+        },
+        {
+          "path": "src/common/thread/COPYING",
+          "sha256": "7a4436f9ec37603356791c87de3bc444989befd2682d29efb3d97604e04c1852"
+        }
+      ]
+    },
+    "smb2": {
+      "filename": "libsmb2-6.1.tar.gz",
+      "sha512": "7f481b22f90b82d19c6bb29537ef10229b3ff4aff3d46dff5b11ee22c9c0410f1d58f466cf0774507d1d6f03c06dd82b223b1f4be75da239402e57749382fe5f",
+      "sha256": "cee0a62457a46b1a4d48b9b0094cf53f489e3ff5028d1344c188156aeb1c7239",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "749c710c2b3d5c95906c785f28af9abbe4ce909311e72eb72eee5c6873e2fa6f"
+        },
+        {
+          "path": "LICENCE-LGPL-2.1.txt",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        }
+      ]
+    },
+    "soxr": {
+      "filename": "soxr-0.1.3-Source.tar.xz",
+      "sha512": "f4883ed298d5650399283238aac3dbe78d605b988246bea51fa343d4a8ce5ce97c6e143f6c3f50a3ff81795d9c19e7a07217c586d4020f6ced102aceac46aaa8",
+      "sha256": "b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889",
+      "license_files": [
+        {
+          "path": "LICENCE",
+          "sha256": "dc98676341fdcd29d9f279c9679d6a75288785b174ded8d1b2e316c366166135"
+        },
+        {
+          "path": "COPYING.LGPL",
+          "sha256": "f2f118b9029ec1871b953639ecc46651b2fc7b62e295e6cf3ef2ac4c9a058b33"
+        }
+      ]
+    },
+    "spatialaudio": {
+      "filename": "spatialaudio-0.3.0.tar.bz2",
+      "sha512": "ef1835a94cd87c55ac9327762ae8f1143272de2463ca850299be15d6cf7f5a554e536cc18f70475c25e2c78f434b9c51de158a7246956c8c1f9de3256a67b87a",
+      "sha256": "284c1dbd8efd46c03be84ac7070bc87cae81b7125352b143a70be3e2b96988e3",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "63176449375086d82d675541c56bce8dd1ed7b2e9cff41c9fb8b8b388f2869b6"
+        }
+      ]
+    },
+    "speex": {
+      "filename": "speex-1.2.1.tar.gz",
+      "sha512": "52e00300df82e1c7fb527b245af02b99a1f37faef74d004b7cd981052f1aa22a412cb18f5c7a5618df4c958f727c97eb7385beec99d68548d5b02e76192d4e0a",
+      "sha256": "4b44d4f2b38a370a2d98a78329fefc56a0cf93d1c1be70029217baae6628feea",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "2654a4264b2bfe298dedc508748d140111840c315cc8eb646a3a68c13fa75b01"
+        }
+      ]
+    },
+    "speexdsp": {
+      "filename": "speexdsp-1.2.1.tar.gz",
+      "sha512": "41b5f37b48db5cb8c5a0f6437a4a8266d2627a5b7c1088de8549fe0bf0bb3105b7df8024fe207eef194096e0726ea73e2b53e0a4293d8db8e133baa0f8a3bad3",
+      "sha256": "8c777343e4a6399569c72abc38a95b24db56882c83dbdb6c6424a5f4aeb54d3d",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "2654a4264b2bfe298dedc508748d140111840c315cc8eb646a3a68c13fa75b01"
+        }
+      ]
+    },
+    "ssh2": {
+      "filename": "libssh2-1.11.1.tar.xz",
+      "sha512": "8322b54a522b0cbbb07916d29ec045c08f8ed94bd8abb5e524038640e90a317667a25be46d95b62b101ed726ade0a51a90fb246cf34c045c38f927f4e439e431",
+      "sha256": "9954cb54c4f548198a7cbebad248bdc87dd64bd26185708a294b2b50771e3769",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "f7f9633cf9ff2f1333f3d7ce46973a8716a4d2a2815ad56f30d437d5fea7bafe"
+        }
+      ]
+    },
+    "taglib": {
+      "filename": "taglib-2.3.tar.gz",
+      "sha512": "5bf3e2b73d9c6eb2e9262f5f64a2adb4d350b6fa19656372c962319eb24122fbb9f6bb13ec3763c6cea4b9e92de39c822870fbf7e426f4bf70114e16333c3e1b",
+      "sha256": "7349f6fd942418bc7009ebe743eb7c9d055f02921ec56fa436ec25007c47fd38",
+      "license_files": [
+        {
+          "path": "COPYING.LGPL",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "COPYING.MPL",
+          "sha256": "53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f"
+        },
+        {
+          "path": "3rdparty/utfcpp/LICENSE",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+        }
+      ]
+    },
+    "theora": {
+      "filename": "libtheora-fb92ede9ba5162d0b8134cd1ff57751df6f3dbe6.tar.xz",
+      "git_revision": "fb92ede9ba5162d0b8134cd1ff57751df6f3dbe6",
+      "git_url": "https://github.com/xiph/theora.git",
+      "sha256": "10365bf80bfab92f4c2328a913a4225e115ef46aeb92ed971546ec6a2abeb7ac",
+      "tree": "a1830a9ddf190a5bcabd43cc3a6b9977c94dcabc",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "8417fad7da775735564e209484a2e011e0fa201e94f01fdbee6e4977e478e6fc"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2c902950c73a63cd285dc0c36573de9c5fefe66d49312949c51d941f33e92932"
+        }
+      ]
+    },
+    "twolame": {
+      "filename": "twolame-0.4.0.tar.gz",
+      "sha512": "cc594bc8d2322922280f915a3c0aa52540cca0350d6498bc96f3f60fd6e53f951e775ea015a44bdb29ec883b46b31a0e5483f6a5c188b02e30008289273c7d03",
+      "sha256": "cc35424f6019a88c6f52570b63e1baf50f62963a3eac52a03a800bb070d7c87d",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "257a842724705950b07da76ce0e22ffa80ec77b3e9dfc6702522ac342409da0f"
+        }
+      ]
+    },
+    "upnp": {
+      "filename": "pupnp-release-1.14.31.tar.gz",
+      "sha512": "be0f876adb7a0799187531cc83a29afd5bfe8f7772e909f88faf406e344f992ccb07ef410f7511766576bde8128478926e33cebfcfa8ed1ba15fe136e0bfc8c7",
+      "sha256": "ce1dd3da7268ad61a56041af0ee80a3d067e7fbd197e2a387ae53942f70068bd",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "c8b99423cad48bb44e2cf52a496361404290865eac259a82da6d1e4331ececb3"
+        },
+        {
+          "path": "site/LICENSE",
+          "sha256": "0375955c8a79d6e8fa0792d45d00fc4e7710d7ac95bcbd27f9225a83f5c946fd"
+        }
+      ]
+    },
+    "utfcpp": {
+      "filename": "utfcpp-3.2.5.tar.gz",
+      "sha512": "1ce12c8158a2f3bcddec104ceacedaea4031b4c88fc0fa1f1fae8dfa8df81c846861df9d01e8f294d79b9e4ab8c51bd1289f404eed24d07abc760688fee13090",
+      "sha256": "14fd1b3c466814cb4c40771b7f207b61d2c7a0aa6a5e620ca05c00df27f25afd",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+        }
+      ]
+    },
+    "vorbis": {
+      "filename": "libvorbis-1.3.7.tar.xz",
+      "sha512": "bbf5f11f623d959b3ba98d6b52806521b0b918b59b867f0658c153ea1013293364eead4987e9e71f8798021379310860a2e548fcf89d10caf23d45e41aba45cd",
+      "sha256": "b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b",
+      "license_files": [
+        {
+          "path": "COPYING",
+          "sha256": "ec1815db59fcd302846df949d7424876cb2e2dc5ed1606c5fb0b36787b1cf43a"
+        }
+      ]
+    },
+    "vpx": {
+      "filename": "libvpx-1.16.0.tar.gz",
+      "sha512": "07f5e352411d6c0be331706d1835ac89bafbeddcbbac5542b473323766e9e974f4f68b33590f2aa50a7d8d69468a642b508cbb0a7c49a82c9933b07820f9c9d9",
+      "sha256": "7a479a3c66b9f5d5542a4c6a1b7d3768a983b1e5c14c60a9396edc9b649e015c",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "8267348d5af1262c11d1a08de2f5afc77457755f1ac658627dd9acf71011d615"
+        },
+        {
+          "path": "PATENTS",
+          "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c"
+        },
+        {
+          "path": "third_party/googletest/src/LICENSE",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "path": "third_party/libwebm/LICENSE.TXT",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+        },
+        {
+          "path": "third_party/libwebm/PATENTS.TXT",
+          "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c"
+        },
+        {
+          "path": "third_party/libyuv/LICENSE",
+          "sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f"
+        },
+        {
+          "path": "third_party/nalloc/LICENSE",
+          "sha256": "d7dd0396ec46975e1bf9093680068ef301bc0ed204603e623a6f7073ab922ab1"
+        },
+        {
+          "path": "third_party/x86inc/LICENSE",
+          "sha256": "719d8fa235f2068e0ae6d6a7dceb0a7720d7840f0f0ebed29957989e6ded3cd8"
+        }
+      ]
+    },
+    "vulkan-headers": {
+      "filename": "Vulkan-Headers-1.4.355.tar.gz",
+      "sha512": "3dd6d95ff1916b0660d5d15882232da53f263e8da3bfd0818c719a24f8f63ea0228ed3f6575cc8473ed53d688f280b93ef8412dc8dddf20ae3ce495f5f653b6f",
+      "sha256": "0820d86608b1f94bb84f8f7b39c6e190c4397d5cd967d60c10fb7df8351ba475",
+      "license_files": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "ac24e5ea920e4318e4d02c4086ae51f53cfb03feed06c18df1019e7ada1ec7bc"
+        }
+      ]
+    },
+    "zlib": {
+      "filename": "zlib-1.3.2.tar.xz",
+      "sha512": "cf3d49fbabddc57cca99858feeca8f910e9de42a16014cddd406814d2d24ee33fee2af3805d7efbb1b04b05f55818092b000daf82502b675df65f2512c353f73",
+      "sha256": "d7a0654783a4da529d1bb793b7ad9c3318020af77667bcae35f95d0e42a792f3",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+        },
+        {
+          "path": "contrib/dotzlib/LICENSE_1_0.txt",
+          "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951"
+        },
+        {
+          "path": "contrib/minizip/LICENSE.Info-Zip",
+          "sha256": "fc686023047ce5ce3a18a9b8a777156f0e475929d3de06bac279f3c025d2b2ca"
+        }
+      ]
+    },
+    "zvbi": {
+      "filename": "zvbi-0.2.45.tar.gz",
+      "sha512": "c627b65627446287cededd26857a7f25191adc8c42cab5a66e76f9673e06cafa52d9c3e2d31e60f949bbcaa155f61b31d775876f97f3f5c7cffe980548992a07",
+      "sha256": "e6c954fde2a5a635187f19e1ab870a88c1a982012c5f1b33b8f2513e0ab7a50e",
+      "license_files": [
+        {
+          "path": "COPYING.md",
+          "sha256": "6d679539253897582d38fcd1eabfa670c01c0ece73d8cd3dc97869fcf723f106"
+        }
+      ]
+    }
+  },
+  "status": "SOURCE_INPUTS_VERIFIED_LICENSE_REMEDIATION_REQUIRED"
+}

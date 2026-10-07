@@ -1,0 +1,70 @@
+diff --git a/extras/package/apple/build.conf b/extras/package/apple/build.conf
+index 8e53914..0ca1b0c 100644
+--- a/extras/package/apple/build.conf
++++ b/extras/package/apple/build.conf
+@@ -34,7 +34,7 @@ export VLC_CONTRIB_OPTIONS_BASE=(
+     --enable-ad-clauses
+     --disable-disc
+     --disable-iconv
+-    --enable-zvbi
++    --disable-zvbi
+     --disable-kate
+     --disable-caca
+     --disable-gettext
+@@ -126,6 +126,8 @@ export VLC_CONTRIB_OPTIONS_WATCHOS=(
+ 
+ # Base configure options for VLC
+ export VLC_CONFIG_OPTIONS_BASE=(
++    --disable-zvbi
++    --disable-telx
+     --disable-sse
+     --disable-vcd
+     --disable-macosx
+@@ -191,6 +193,13 @@ export VLC_CONFIG_OPTIONS_WATCHOS=(
+ # and before it is (in case of static modules) archived
+ # together to one big static library
+ export VLC_MODULE_REMOVAL_LIST_BASE=(
++    dummy
++    file_logger
++    stream_out_cycle
++    syslog
++    rotate
++    sap
++    stream_out_rtp
+     stats
+     stream_out_stats
+     shm
+diff --git a/extras/package/apple/build.sh b/extras/package/apple/build.sh
+index 90e5893..0b39099 100755
+--- a/extras/package/apple/build.sh
++++ b/extras/package/apple/build.sh
+@@ -479,10 +479,16 @@ gen_vlc_static_module_list()
+ 
+     local array_list
+     local declarations_list
++    local license_declarations
++    local license_array
++    local license_symbol
+ 
+     for symbol in "${symbol_array[@]}"; do
+         declarations_list+="VLC_ENTRY_FUNC(${symbol});\\n"
+         array_list+="    ${symbol},\\n"
++        license_symbol="${symbol/vlc_entry__/vlc_entry_license__}"
++        license_declarations+="extern const char *${license_symbol}(void);\\n"
++        license_array+="    ${license_symbol},\\n"
+     done
+ 
+     printf "\
+@@ -495,6 +501,12 @@ const vlc_plugin_cb vlc_static_modules[] = {\\n
+ };" \
+     "$declarations_list" "$array_list" >> "$output" \
+       || abort_err "Failure writing static module list file"
++
++    # Keep each included module's license getter in the final Apple binary so
++    # release audits can inspect it even when unused symbols are stripped.
++    printf "\\n%b\\n__attribute__((used)) const char *(*const eptv_vlc_module_licenses[])(void) = {\\n%b    NULL\\n};\\n" \
++      "$license_declarations" "$license_array" >> "$output" \
++      || abort_err "Failure writing module license list"
+ }
+ 
+ ##########################################################

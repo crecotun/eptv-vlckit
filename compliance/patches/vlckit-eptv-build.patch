@@ -1,0 +1,28 @@
+diff --git a/compileAndBuildVLCKit.sh b/compileAndBuildVLCKit.sh
+index 70a4489..7129c38 100755
+--- a/compileAndBuildVLCKit.sh
++++ b/compileAndBuildVLCKit.sh
+@@ -167,6 +167,15 @@ buildxcodeproj()
+         deploymentTargetFlag="IPHONEOS_DEPLOYMENT_TARGET=${SDK_MIN}"
+     fi
+ 
++    # EPTV's active native apps require OS 26. The older upstream framework
++    # minimums are rejected by the current Xcode SDK. Signing happens when
++    # the app embeds the framework, not in this dependency build.
++    if [ "$MACOS" = "yes" ]; then
++        deploymentTargetFlag="MACOSX_DEPLOYMENT_TARGET=26.0"
++    elif [ "$TVOS" = "yes" ]; then
++        deploymentTargetFlag="TVOS_DEPLOYMENT_TARGET=26.0"
++    fi
++
+     local defs="$GCC_PREPROCESSOR_DEFINITIONS"
+ 
+     xcodebuild archive \
+@@ -180,6 +189,7 @@ buildxcodeproj()
+                ${deploymentTargetFlag} \
+                ${bitcodeflag} \
+                ${verboseflag} \
++               CODE_SIGNING_ALLOWED=NO \
+                SKIP_INSTALL=no \
+                ONLY_ACTIVE_ARCH=NO \
+                > ${out}

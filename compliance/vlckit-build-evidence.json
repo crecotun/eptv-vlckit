@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "vlckit_version": "4.0.0a24",
+  "distribution_revision": "6cbc4e7b248aa51ec0906697abb30ecae47194b7",
+  "build_revision": "462579346dceefe2f2b9f901fab7c92b12ad9511",
+  "pipeline_url": "https://code.videolan.org/videolan/VLCKit/-/pipelines/737986",
+  "job_url": "https://code.videolan.org/videolan/VLCKit/-/jobs/2809436",
+  "raw_log_url": "https://code.videolan.org/videolan/VLCKit/-/jobs/2809436/raw",
+  "raw_log_sha256": "7a8960b051273dc89d4ab7829c3a193194896785812a3c5b4d0e45d018449d67",
+  "artifact_sha256": "c61a42052ec4c1315325fba81f8893f4ccf639d92bf61dd1b3c37c3a2f26b8e3",
+  "vlc_base_revision": "5dd4aebdabf4a625822036bda08a24a91295158c",
+  "vlc_patched_tree": "30338181539d30e1676feca4690f306082107c1e",
+  "platforms": {
+    "macos": {"build_argument": "-xf", "fingerprint": "4.0.0-dev-38816-gba1f1ef1b2"},
+    "tvos": {"build_argument": "-ft", "fingerprint": "4.0.0-dev-38816-g2d998d8f90"}
+  }
+}

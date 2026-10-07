@@ -1,0 +1,20 @@
+name: Verify library maintenance inputs
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Verify compact inputs, licenses and release metadata
+        run: python3 scripts/verify.py
+      - name: Check helper syntax
+        run: |
+          python3 -m py_compile scripts/verify.py scripts/prepare-build.py
+          bash -n scripts/build-eptv-vlckit.sh
+      - name: Test native audit and provenance tooling
+        run: python3 -m unittest discover -s scripts/compliance -v

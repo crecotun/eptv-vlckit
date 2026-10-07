@@ -1,0 +1,9 @@
+/downloads/
+/work/
+/artifacts/
+/source/
+/ComplianceArtifacts/
+/.private/
+.DS_Store
+__pycache__/
+*.pyc
