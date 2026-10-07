@@ -15,23 +15,24 @@ external app metadata checkout is needed for a historical investigation.
 
 ## Current dependency receipt
 
-The qualified native archives have not been rebuilt or repackaged. The original
-record keeps its historical EPTV-relative input names and fingerprint; the exporter
-maps its old podspec input to `packaging/EPTVVLCKit.podspec` without changing identity.
+The current a25 native release was rebuilt from the published upstream source,
+with exact source/patch/component inputs and fresh artifact-bound qualification.
+Old release archives remain immutable at their historical tag.
 
 ```sh
 python3 scripts/export-eptv-receipt.py \
   --artifacts downloads \
-  --output releases/4.0.0a24.eptv2/EPTVVLCKit-dependency.json
+  --output releases/4.0.0a25.eptv1/EPTVVLCKit-dependency.json
 python3 scripts/verify.py
 python3 -m unittest discover -s scripts/compliance -v
 ```
 
 Use `--published` only after actual public source/binary downloads have been
 verified. The private GitHub repository/prerelease and moved evidence do not provide public source availability.
-The current original logs and framework/debug symbols contain local creator paths;
-prepare/review a sanitized public source package and decide the binary disclosure
-before public uploading or changing repository visibility. Do not silently mutate the qualified archive ZIPs or their hashes.
+The current source ZIP excludes raw logs, and final frameworks/debug symbols
+have been checked for creator home-directory paths. Historical a24 archives
+still contain their original paths/logs. Public visibility and binary disclosure
+require separate owner authorization. Do not silently mutate the qualified archive ZIPs or their hashes.
 
 ## New native version
 
@@ -41,7 +42,10 @@ before public uploading or changing repository visibility. Do not silently mutat
    initialize Git and record new revisions deliberately for a new native version.
    Use `scripts/prepare-build.py` and `scripts/build-eptv-vlckit.sh`; record new
    source revisions/trees, patches, version, configuration and toolchain.
-2. Update the qualified input recipe deliberately. Native source/patches,
+2. Collect native inputs using `scripts/collect-native-vlckit-inputs.py` with the
+   completed build log and prior verified inventory. It verifies SHA512 recipe
+   checks, unchanged Git contrib identities and complete package coverage.
+   Update the qualified input recipe deliberately. Native source/patches,
    component sources and legal texts remain supplier inputs. New podspec inputs
    use `packaging/EPTVVLCKit.podspec` instead of any EPTV checkout path.
 3. Use `scripts/package-eptv-vlckit.py` to assemble a pending binary/source

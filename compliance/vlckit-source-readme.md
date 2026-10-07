@@ -1,15 +1,15 @@
-# EPTV VLCKit 4.0.0a24.eptv2 corresponding-source candidate
+# EPTV VLCKit 4.0.0a25.eptv1 corresponding-source candidate
 
 This package contains the exact source used for the EPTV Mac/TV framework,
 upstream contrib archives and legal texts, EPTV patches, local tool sources,
-license audits, and build logs. No proprietary EPTV application code or
+and license audits. Build logs remain private engineering evidence. No proprietary EPTV application code or
 provider inputs are included. Distribution approval is recorded separately.
 
-The wrapper starts at VideoLAN 6cbc4e7b248aa51ec0906697abb30ecae47194b7.
-The VLC source starts at public 5dd4aebdabf4a625822036bda08a24a91295158c,
-with the 17 wrapper patches and the EPTV GPL-removal/metadata patch applied.
+The wrapper starts at VideoLAN 8f5ce02f09a7da5d061a24ddac3cb432f2a9b332.
+The VLC source starts at public 005e69e67a8730f128e44bde68437fbb048cf45f,
+with the 12 wrapper patches and the EPTV GPL-removal/metadata patch applied.
 Exact resulting commits/trees, patch checksums, toolchain and slice audit
-reports are in build-record.json. Runtime libvlc_get_changeset is d5846d0.
+reports are in build-record.json. Runtime libvlc_get_changeset is b8e875d.
 
 Restore VLCKit-source.tar.gz into VLCKit/ and VLC-source.tar.gz into vlc/.
 Copy contrib/ archives and .githash files into vlc/contrib/tarballs/.
@@ -50,7 +50,11 @@ Qualification audits all three ARM slices and requires real synthetic H.264/AAC 
 Contrib archives are retained conservatively, including build tools, headers
 and excluded/optional source. The presence of GPL source/license alternatives
 in these archives does not identify them as linked binary code. Selected
-alternatives are Apache-2.0 for Mbed TLS, BSD-3-Clause for Libgcrypt jitter
+alternatives, where applicable, are Apache-2.0 for Mbed TLS, BSD-3-Clause for Libgcrypt jitter
 entropy files, the FreeType License for FreeType, and LGPL-2.1 for TagLib and
 libnfs libraries. The separate named transitive/distribution review remains
 required. Review full source headers, legal documents and actual build inputs.
+
+Build from a neutral absolute directory and provide Python through a neutral
+host-bin path. The entry point keeps Xcode DerivedData within the build tree.
+Inspect binaries and dSYMs for creator paths before release packaging.

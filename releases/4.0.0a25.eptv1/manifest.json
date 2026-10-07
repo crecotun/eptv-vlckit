@@ -1,0 +1,23 @@
+{
+  "version": "4.0.0a25.eptv1",
+  "repository": "https://github.com/crecotun/eptv-vlckit",
+  "tag": "4.0.0a25.eptv1",
+  "platforms": [
+    "macos-arm64",
+    "tvos-arm64",
+    "tvos-arm64-simulator"
+  ],
+  "minimum_os": "26.0",
+  "assets": {
+    "EPTVVLCKit.zip": {
+      "sha256": "b5873e62bbdb6111ce3e58cbcc7a3a4de6cb6ba837179648d13479c6ae6ebbdd",
+      "bytes": 245312744,
+      "url": "https://github.com/crecotun/eptv-vlckit/releases/download/4.0.0a25.eptv1/EPTVVLCKit.zip"
+    },
+    "EPTVVLCKit-source.zip": {
+      "sha256": "7cedfac097bd6d30ac65f21ab800c734be37874b754ceb9c9e7af15d862d03c9",
+      "bytes": 628137357,
+      "url": "https://github.com/crecotun/eptv-vlckit/releases/download/4.0.0a25.eptv1/EPTVVLCKit-source.zip"
+    }
+  }
+}

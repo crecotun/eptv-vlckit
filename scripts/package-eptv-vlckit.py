@@ -293,7 +293,7 @@ def main():
     p.add_argument('--finalize', action='store_true')
     p.add_argument('--record', type=Path, help='Build-input record, or packaged candidate for --finalize')
     p.add_argument('--qualification-evidence', type=Path)
-    p.add_argument('--source-inventory', default='compliance/vlckit-a24-source-inputs.json')
+    p.add_argument('--source-inventory', default='compliance/vlckit-source-inputs.json')
     p.add_argument('--notices', type=Path, help='Reviewed dependency legal texts for this candidate')
     p.add_argument('--vlckit-source', type=Path)
     p.add_argument('--vlc-source', type=Path)

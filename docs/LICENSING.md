@@ -9,13 +9,13 @@ changes. Original source notices and copyright headers are preserved.
   tree contains GPL modules/tools, including modules excluded from our binary.
 - Contrib and host tools: their archive source headers and the collected legal
   texts under `source/legal` inside the release source package. Consolidated
-  legal texts are retained as `releases/4.0.0a24.eptv2/TransitiveNotices.txt`.
+  legal texts are retained as `releases/4.0.0a25.eptv1/TransitiveNotices.txt`.
 - EPTV-authored patches, build/support scripts and documentation: LGPL 2.1 or
   later, copyright 2026 Alexei Crecotun.
 
 The LGPL text is reproduced in root `LICENSE`; `licenses/GPL-2.0.txt` also retains
 VLC's GPL text. These do not replace any component's original terms. Full collected
-notices are in `releases/4.0.0a24.eptv2/`; detailed audits stay in the source archive.
+notices are in `releases/4.0.0a25.eptv1/`; detailed audits stay in the source archive.
 
 The chosen binary excludes zvbi/both teletext decoders and these plugin archives:
 `file_logger`, `syslog`, `rotate`, `sap`, `stream_out_cycle`, `stream_out_rtp`,

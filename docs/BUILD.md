@@ -1,4 +1,4 @@
-# Build 4.0.0a24.eptv2
+# Build 4.0.0a25.eptv1
 
 Use an Apple Silicon Mac, Xcode 27.0 (27A266a), its macOS/tvOS SDKs, GNU Make
 4.4.1 and a Python supported by Meson 1.12. Keep the source build's Debug
@@ -53,8 +53,11 @@ may differ in paths, timestamps and binary bytes. The existing release checksums
 identify the original qualified archives, not arbitrary locally rebuilt outputs.
 
 See [the preserved package instructions](CORRESPONDING_SOURCE.md) for native
-policy, removed features, source provenance and review limits. The complete
-historical package includes original build logs and host-tool archives. Source preparation
-omits logs; future source packaging does not include raw engineering logs. A new dependency
+policy, removed features, source provenance and review limits. The source package includes host-tool archives and excludes raw engineering logs. A new dependency
 release must receive fresh binary identity, component audit and decode/build
 qualification; repository CI only checks publication/source integrity.
+
+For privacy, restore/build under a neutral directory (for example `/private/tmp/vlckit-build`)
+and expose Python through a neutral `host-bin/python3` symlink. The native entry
+point places DerivedData inside the source build tree. Check final frameworks
+and dSYMs for creator home-directory paths before packaging.

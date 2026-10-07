@@ -2,25 +2,23 @@
   "schema_version": 1,
   "date": "2026-10-07",
   "status": "ENGINEERING_QUALIFICATION_PASSED",
-  "dependency": "EPTVVLCKit 4.0.0a24.eptv2",
+  "dependency": "EPTVVLCKit 4.0.0a25.eptv1",
   "platforms": [
     "macos",
     "tvos"
   ],
-  "deferred_ios": "UNCHANGED_ORIGINAL_POD_NOT_QUALIFIED",
-  "build_record": "compliance/vlckit-eptv-build.json",
-  "artifact_sha256": "e5545118d0d86384821c6fa6541c7294d652c4a95bb8bd8f0092f158862b1def",
-  "source_archive_sha256": "26f8117a03a796c5ddd4e9814b11e7fa9577a30c47e54dbb2c732b01f6b9fe09",
+  "deferred_ios": "UNCHANGED_ORIGINAL_POD_NOT_REQUALIFIED",
+  "artifact_sha256": "b5873e62bbdb6111ce3e58cbcc7a3a4de6cb6ba837179648d13479c6ae6ebbdd",
+  "source_archive_sha256": "7cedfac097bd6d30ac65f21ab800c734be37874b754ceb9c9e7af15d862d03c9",
   "source_trees_verified": [
-    "clean build checkouts",
-    "clean trees restored from packaged source tarballs (finalizer)"
+    "clean native Git checkouts",
+    "clean trees extracted from final source archive (finalizer)"
   ],
   "license_audit": {
     "architectures": 3,
     "status": "FOCUSED_CHECK_PASSED",
     "known_gpl_modules": 0,
     "gpl_teletext_symbols": 0,
-    "module_inventory": "UNCHANGED_FROM_PREVIOUS_ARM_SLICES",
     "module_counts": {
       "macos-arm64": 293,
       "tvos-arm64": 288,
@@ -31,43 +29,37 @@
     "macos-playback.json": {
       "status": "PASSED_SYNTHETIC_H264_AAC",
       "runtime_version": "4.0.0-dev Otto Chriek",
-      "runtime_changeset": "d5846d0",
-      "binary_sha256": "d92ed98fe58b00fb056d48ecd04ff3bc7bcc0379526e0591bbee880f6dff37bd",
-      "media_sha256": "c23c098fe34abde92ae9c65e64e034ad2d0e0167e3ce53f3f0ecb078bc12bed3",
-      "video_frames": 94,
-      "audio_frames": 145408,
+      "runtime_changeset": "b8e875d",
+      "binary_sha256": "d8bd2a2e5b98564f797d8350b34301b794f2708026ecf510465e39ce47a6e595",
+      "media_sha256": "c76c6daa610cc57fb305821f9b7951a5264f2a2318d4c0e936da3b43801998fb",
+      "video_frames": 115,
+      "audio_frames": 154624,
       "nonzero_video": true,
       "nonzero_audio": true
     },
     "tvos-playback.json": {
       "status": "PASSED_SYNTHETIC_H264_AAC",
-      "runtime_changeset": "d5846d0",
-      "video_frames": 95,
-      "audio_frames": 145408
+      "runtime_changeset": "b8e875d",
+      "video_frames": 118,
+      "audio_frames": 154624
     }
   },
   "app_builds": {
     "macos_arm64_release": "PASSED",
-    "tvos_arm64_device_release": "PASSED",
-    "ios_arm64_device_release": "PASSED"
+    "tvos_arm64_device_release": "PASSED"
   },
   "unit_tests": {
     "macos": {
       "count": 78,
-      "failures": 0
+      "passed": 78,
+      "failures": 0,
+      "opt_in_skips": 0
     },
     "tvos": {
       "count": 162,
+      "passed": 161,
       "failures": 0,
       "opt_in_skips": 1
-    },
-    "iphone": {
-      "count": 73,
-      "failures": 0
-    },
-    "ipad": {
-      "count": 73,
-      "failures": 0
     },
     "shared": {
       "count": 459,
@@ -76,33 +68,34 @@
   },
   "embedded_binary_identity": "PASSED_MAC_ARM64_AND_TV_DEVICE",
   "macos_replacement": "PASSED_LOCAL_RESIGNED_REPLACEMENT",
-  "macos_development_signing": "PASSED_APPLE_DEVELOPMENT_HARDENED_RUNTIME_SANDBOX",
-  "distribution_signing": "NOT_RUN_NO_DISTRIBUTION_IDENTITY",
+  "distribution_signing": "NOT_RUN",
   "release_approval": "PENDING_NAMED_REVIEW",
-  "publication": "LOCAL_CANDIDATE",
+  "publication": "PRIVATE_ENGINEERING_CANDIDATE",
   "physical_playback": "NOT_RUN",
+  "privacy": {
+    "framework_and_dsym_creator_home_paths": 0,
+    "source_package_raw_logs": 0
+  },
   "evidence_sha256": {
-    "ComplianceArtifacts/eptv-arm64/arm64-build.log": "18aa55c798eed427894a4ba76554af04cfe63fceb9440fe1e0ca4ae59c373f9e",
-    "ComplianceArtifacts/eptv-arm64/arm64-build-bootstrap.log": "0100fbfe1c5bdef5405561bb895b3b11305edb191bc1be8fcc8e814c9b1d673b",
-    "ComplianceArtifacts/eptv-arm64/macos-license-audit.json": "4c8016a6ee4c2f0634bd1d0ed8c7909224de61c023be10dfea90d80fd230d1b3",
-    "ComplianceArtifacts/eptv-arm64/tvos-license-audit.json": "9d11226ceb8e24469b6757a90cdfd86361ae4af12940585a751ca269cd2dc1cf",
-    "ComplianceArtifacts/eptv-arm64/tvos-simulator-license-audit.json": "903b23ab20a012c90203a9f762b1de66e6c23c323907e0e8a601a6bf3d18a24c",
-    "ComplianceArtifacts/eptv-arm64/macos-playback.json": "aead1ff53eab103e9d76fd5451adbcaa210d99065e4cbd958f0e918b51f74c05",
-    "ComplianceArtifacts/eptv-arm64/tvos-playback.json": "57bd4e997e56ea23c049fd9f5afb442bfdb71de1b2b4354d3ff9eede69a22e4b",
-    "ComplianceArtifacts/eptv-arm64/macos-tests.log": "21c57e943925c1d081c2bc5385dd2981bbe9c784336b22e12bbe7976973f385a",
-    "ComplianceArtifacts/eptv-arm64/tvos-tests.log": "f296ca53c38c223f24be7cecc459bd77de65a4348c202cbb586fc9af41e9c971",
-    "ComplianceArtifacts/eptv-arm64/macos-test-summary.json": "10b29c19ba1779ef0577fb6cef7e51c5bb2cf171fb608e30a95eb60933d695e9",
-    "ComplianceArtifacts/eptv-arm64/tvos-test-summary.json": "358584faa5a7bb5da71ce6b4c328b82c82987f0e2761cf34378ad6beef4ad6c4",
-    "ComplianceArtifacts/eptv-arm64/shared-tests.log": "15915e24796989f26f474f811d8bd0c24ea179b0ef4eff2c84084cfa95d40c3a",
-    "ComplianceArtifacts/eptv-arm64/ios-tests.log": "a40cd3ba2db4f774aebe14c3383992c7f09c36dad6108638bc336f154411e66b",
-    "ComplianceArtifacts/eptv-arm64/ipad-tests.log": "869e031be95cc2df642d90da3b0ff4302da43f3998ba7f591df9f418c6a164a8",
-    "ComplianceArtifacts/eptv-arm64/ios-device.log": "5accae38cfcd63684a98796a1f97335c06e7098540f573fdd4fddd76b11db5f9",
-    "ComplianceArtifacts/eptv-arm64/macos-development-signing.log": "643ff9bc241ac586be8a849ddba70c7bd2a9a57989e90764063b7ac2af24b0f4",
-    "ComplianceArtifacts/eptv-arm64/macos-development-signature.log": "b673a833f1bef64b701f92b24fb9debaa22032f41cb0cdaa5a0281af265559ea",
-    "ComplianceArtifacts/eptv-arm64/macos-development-entitlements.plist": "f1c1aac3c0dbafc19981041a9a57ee7972f7cfcc8ba39761c8d81330de8e1474",
-    "ComplianceArtifacts/eptv-arm64/macos-development-validation.log": "5f4841884558068cbee0147f2fb5d08949ae3c9d0512a90e747a347854ba29d2",
-    "ComplianceArtifacts/eptv-arm64/tvos-archive-final.log": "4ac1c48b7df16420e2e610e6765067b3c7b611ce9e8ddf423527c11bca4f1a6b",
-    "ComplianceArtifacts/eptv-arm64/final-embedded-identity.log": "a7b2b1cbb8953de5c5d1fb065f25b968dc62d66c51e5b47c8b7538d1c5d96289",
-    "ComplianceArtifacts/eptv-arm64/macos-replacement.log": "5d0bddab209274016fa6359950d3ff21cd1d81e52a41598c2b6c794282e62277"
+    "artifacts/4.0.0a25.eptv1/evidence/arm64-build.log": "6fc800fac54d52b741f65227daf90cedbe477f4c211d6e2871495bc56b47e8ce",
+    "artifacts/4.0.0a25.eptv1/evidence/embedded-identity.json": "f0e7ffbecc18f70a3b8b19ae0405d89944ae7604a050e5a5f3c92eb39983cc4f",
+    "artifacts/4.0.0a25.eptv1/evidence/macos-archive.log": "29e7c092a924b9efc00da79ea9306ff405a0ca6c885500cc18d5aa377831c516",
+    "artifacts/4.0.0a25.eptv1/evidence/macos-build-for-testing.log": "574d8f86096da081616b7cfd2fcc3f088e17744234f41c77c5b3f916887aed12",
+    "artifacts/4.0.0a25.eptv1/evidence/macos-build.log": "312a6a7600ca3715da261a76cd18c17aed455e8751d52873833205559acd3182",
+    "artifacts/4.0.0a25.eptv1/evidence/macos-playback.json": "1b19dcd93427ba6e2b9f2cc1120147caea6e9812c7cab635104143dff953fac4",
+    "artifacts/4.0.0a25.eptv1/evidence/macos-replacement.json": "7ed71177f59d0747d4325c3fae0a9b8e572cbfb8b7deaca39bbd2468c3205eac",
+    "artifacts/4.0.0a25.eptv1/evidence/macos-replacement.log": "8d481b27f2844e9b7408e107e4247267ea57ecd266cfa969776b9155dfb7b967",
+    "artifacts/4.0.0a25.eptv1/evidence/macos-test-summary.json": "9a18f91758dec8e818ea37741ee1cb972c57723e4acd40b157eda9e8a717bb88",
+    "artifacts/4.0.0a25.eptv1/evidence/macos-test-without-building.log": "8173e5332944775001aa1723a44f8a3d30966ed8cd7e056a3913d7edf9fc711c",
+    "artifacts/4.0.0a25.eptv1/evidence/pod-install.log": "af62afe5910e7ccbd9bea26df136262c6cb231eac728e94b12c6e86ce6a809e0",
+    "artifacts/4.0.0a25.eptv1/evidence/privacy-build.log": "e84c183a0ee9acfb52a36632d64eda554b6314e5b9807cfc2db8bbc708cf62aa",
+    "artifacts/4.0.0a25.eptv1/evidence/shared-tests.log": "5fd82566d18319863f137fe0f840af1f8591373b5a9b9fe439c8bfbc83ce05a3",
+    "artifacts/4.0.0a25.eptv1/evidence/supplier-tests.log": "93f8903974a8ee54d45736a4046fd33a05ff2e814ffc54946f1a377feea682a1",
+    "artifacts/4.0.0a25.eptv1/evidence/tvos-archive.log": "958bce3d83dd343ac2a6d5caa44a63685e30313eed340a93ffab15443fa22f7c",
+    "artifacts/4.0.0a25.eptv1/evidence/tvos-build-for-testing.log": "1c9f90b36c4df58e07d854a45f84e8513530f59f9e216110b032297063dc2bb4",
+    "artifacts/4.0.0a25.eptv1/evidence/tvos-build.log": "a6297a9f09e29f4a4b657f34bc04a95d3dfb22d176b6d515c72c6ba326b69706",
+    "artifacts/4.0.0a25.eptv1/evidence/tvos-playback.json": "d084392971cad51baee2a346aadb65e5475b5c879685a04e98870be0a3389252",
+    "artifacts/4.0.0a25.eptv1/evidence/tvos-test-summary.json": "600998886e8ff101d41d355e52c35c26c5b9fb34ce87de13c643db9103e9950d",
+    "artifacts/4.0.0a25.eptv1/evidence/tvos-test-without-building.log": "1fc9c21f8b58ab5de04b4e1453d14bc91dbe3364dfc1f903700eecfb8540d2c3"
   }
 }

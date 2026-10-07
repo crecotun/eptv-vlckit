@@ -11,7 +11,7 @@ import urllib.request
 from importlib.util import spec_from_file_location, module_from_spec
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = ROOT / "releases/4.0.0a24.eptv2"
+RELEASE = ROOT / "releases" / json.loads((ROOT / "compliance/vlckit-eptv-build.json").read_text())["pod_version"]
 
 def digest(path):
     value = hashlib.sha256()

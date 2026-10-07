@@ -1,21 +1,21 @@
 {
   "schema_version": 2,
   "pod_name": "EPTVVLCKit",
-  "pod_version": "4.0.0a24.eptv2",
-  "vlckit_upstream_revision": "6cbc4e7b248aa51ec0906697abb30ecae47194b7",
-  "vlckit_revision": "65a8ed847608f9a92771c2d0408d556b6a954137",
-  "vlckit_tree": "8aec7e65df506b501faf170bb07a3244ad89b673",
-  "vlc_base_revision": "5dd4aebdabf4a625822036bda08a24a91295158c",
-  "vlc_upstream_patched_tree": "30338181539d30e1676feca4690f306082107c1e",
-  "vlc_revision": "d5846d03e4802835618518db4470d2facba5b593",
-  "vlc_tree": "7df82b09e77238fc6690368e7f5a0186176336f4",
+  "pod_version": "4.0.0a25.eptv1",
+  "vlckit_upstream_revision": "8f5ce02f09a7da5d061a24ddac3cb432f2a9b332",
+  "vlckit_revision": "46a1e01e3b6d48e427c0a6921a0e1dd9d3e9192d",
+  "vlckit_tree": "df18d8cff50ce852fd57bb6a1401ac710b659fe5",
+  "vlc_base_revision": "005e69e67a8730f128e44bde68437fbb048cf45f",
+  "vlc_upstream_patched_tree": "9cb4e084a5e41ba0f7037c209884d8816ef929ad",
+  "vlc_revision": "b8e875d4b416576fc83cf7c7193bed18eb077d82",
+  "vlc_tree": "326d7095e8cd37378d07de0521f83ba3840eedc8",
   "minimum_os": "26.0",
   "configuration": "Debug",
   "patches": {
     "compliance/patches/vlckit-eptv-build.patch": "81ef2b4e6a2a985e092f1fd180d83e381886f2c70a192264a40bc500eed183a7",
     "compliance/patches/vlc-lgpl-release.patch": "8ea0e7d9fb83ff439ce5b584ddde35de689fb661afdedb4045af755d72b67902"
   },
-  "source_inputs_sha256": "26bdb812c09699d091a420d91d1a1b6ebe486593bc5bac01fe85de5204df09de",
+  "source_inputs_sha256": "dd7d4217d93baab8d5cae900a36e11b59d9f7b1cf16ad379bd3ef2c43222aa45",
   "gnu_make": {
     "version": "4.4.1",
     "url": "https://mirrors.kernel.org/gnu/make/make-4.4.1.tar.gz",
@@ -29,10 +29,10 @@
       "status": "FOCUSED_CHECK_PASSED",
       "architectures": {
         "arm64": {
-          "sections_sha256": "2d832899bf1c65f69e7a0cb305efaca94f1b5ad55e9d299618308dbf483e28f1",
-          "load_commands_sha256": "97330095b9ee6cf30ad217d73d3e20ecda4acb6fed528a8cadecb4d0b7ed2500",
-          "linkedit_sha256": "99ca750650c67c6c7567791937ec04f332692d0a66ab336d59100199f05f6141",
-          "runtime_changeset": "d5846d0",
+          "sections_sha256": "1958afee75a35bb2097be38f154f92b427aa023a345adb7b1a3773dc440da98c",
+          "load_commands_sha256": "4b587ec68288d5db075bf110b97637118d5fc231934432c59807dc4323f0c93f",
+          "linkedit_sha256": "fb08b1282d6d822b6e041da16c485b332ec1f8e1e0415225cf416b36cc2e4011",
+          "runtime_changeset": "b8e875d",
           "runtime_version": "4.0.0-dev Otto Chriek",
           "module_count": 293
         }
@@ -42,10 +42,10 @@
       "status": "FOCUSED_CHECK_PASSED",
       "architectures": {
         "arm64": {
-          "sections_sha256": "de66dcf3156fd5285c0ae92d76d30d0942f86b272e627f46f14899eb89a266b4",
-          "load_commands_sha256": "2aef46aea77080c65f9bbb380c56a32518fef213e50eb0b7374feb1340690241",
-          "linkedit_sha256": "dff7fa6aabdf29592a468269de731420cad98aa674fece9b098b484bc2e6f2c9",
-          "runtime_changeset": "d5846d0",
+          "sections_sha256": "195eedeb155a965e658fb7e601a69f51c5370a2df468c8b841e05288bdee1fa5",
+          "load_commands_sha256": "ccc571bdaae8ad303e8e8b6f7ea82dd27a6077fbd41d3cdbe010f9751d392e10",
+          "linkedit_sha256": "3863faec225a45995bca8fac3cc41b29e1362f9b2a8aec93c71ef2023d5b48d6",
+          "runtime_changeset": "b8e875d",
           "runtime_version": "4.0.0-dev Otto Chriek",
           "module_count": 288
         }
@@ -55,17 +55,17 @@
       "status": "FOCUSED_CHECK_PASSED",
       "architectures": {
         "arm64": {
-          "sections_sha256": "15e39f91822f07044b1eed24effab47fa93c990e094f3c82eec154d0985a58dd",
-          "load_commands_sha256": "53093d9fbd7460de28411c08b21cc5bca020c5a1d64b667637572854c60ecc4f",
-          "linkedit_sha256": "c28d9bd63aa916fd32653f38278525a3dc1f2b1274364e44a0207fb369513c72",
-          "runtime_changeset": "d5846d0",
+          "sections_sha256": "e4f387f08b739d911f2e68371b2aea322bc46be8ff162601e3bd4281aa2b078b",
+          "load_commands_sha256": "7ca2bcb1c5a698ba0cab152908add00088cc69c46d9a5c02ecafe385bd857371",
+          "linkedit_sha256": "f3a80a512726bd42411d0b688180586b6a7922c1d04e5acf5dce5c080d45bbc5",
+          "runtime_changeset": "b8e875d",
           "runtime_version": "4.0.0-dev Otto Chriek",
           "module_count": 288
         }
       }
     }
   },
-  "transitive_notices_sha256": "3bffb20fb389c58b5c0a05e80ec7334b2a1d7cf49b6455dc3e998c677dd946c1",
+  "transitive_notices_sha256": "c9ec6401fbb5ca7e981447700aabbe77cec599614e8d6109d82fd9ef57cc8258",
   "distribution_arrangements": {
     "macos": {
       "channel": "app-store",
@@ -86,29 +86,29 @@
       "packaging": "EMBEDDED_DYNAMIC_FRAMEWORK"
     }
   },
-  "podspec_checksum": "509963996e4644f6687fb7de477771e2cbc5891f",
-  "source_inventory": "compliance/vlckit-a24-source-inputs.json",
-  "artifact_sha256": "e5545118d0d86384821c6fa6541c7294d652c4a95bb8bd8f0092f158862b1def",
-  "source_archive_sha256": "26f8117a03a796c5ddd4e9814b11e7fa9577a30c47e54dbb2c732b01f6b9fe09",
+  "podspec_checksum": "dacae5877dca57bbfd42da4c7409d98cd0cc64fa",
+  "source_inventory": "compliance/vlckit-source-inputs.json",
+  "artifact_sha256": "b5873e62bbdb6111ce3e58cbcc7a3a4de6cb6ba837179648d13479c6ae6ebbdd",
+  "source_archive_sha256": "7cedfac097bd6d30ac65f21ab800c734be37874b754ceb9c9e7af15d862d03c9",
   "retained_artifacts": {
     "binary": {
-      "path": "ComplianceArtifacts/eptv-vlckit/4.0.0a24.eptv2/EPTVVLCKit.zip",
-      "url": "https://eptv.crecotun.com/oss/vlckit/4.0.0a24.eptv2/EPTVVLCKit.zip",
+      "path": "artifacts/4.0.0a25.eptv1/EPTVVLCKit.zip",
+      "url": "https://github.com/crecotun/eptv-vlckit/releases/download/4.0.0a25.eptv1/EPTVVLCKit.zip",
       "publication": "LOCAL_REVIEW_CANDIDATE"
     },
     "source": {
-      "path": "ComplianceArtifacts/eptv-vlckit/4.0.0a24.eptv2/EPTVVLCKit-source.zip",
-      "url": "https://eptv.crecotun.com/oss/vlckit/4.0.0a24.eptv2/EPTVVLCKit-source.zip",
+      "path": "artifacts/4.0.0a25.eptv1/EPTVVLCKit-source.zip",
+      "url": "https://github.com/crecotun/eptv-vlckit/releases/download/4.0.0a25.eptv1/EPTVVLCKit-source.zip",
       "publication": "LOCAL_REVIEW_CANDIDATE"
     }
   },
   "qualification_inputs": {
-    "apps/apple/Vendor/EPTVVLCKit/EPTVVLCKit.podspec": "10cccd6f4fc9769bd5a77eed43e4ae3590432fb16087770d8af64dc506ec0762",
-    "compliance/vlckit-source-readme.md": "2272d8476f0d67ab77c97cc8e2f7912a5c77b3421043fd182c828400f8504d2c",
-    "scripts/build-eptv-vlckit.sh": "d6609ac9900b195210ad3eae9d0d81205f055643693de3acf01bae0a3911a163",
-    "compliance/vlckit-eptv-qualification.json": "79727f0a77f1faaa1d8357b47dbf1b2036516f7a294f80227eff764ed79022d6"
+    "packaging/EPTVVLCKit.podspec": "18fce35f9fd51343ca57d67159c97b7edfe82b557d5aee920ec30190fcffb40e",
+    "compliance/vlckit-source-readme.md": "e72540bc840a43ffb7b9b716f7ff6a3dd25a84b9d91102038681bf221c448834",
+    "scripts/build-eptv-vlckit.sh": "b44ba47c1f14c4ce8a8e2b4b9f783eda4ed83893985b6185bd32e0be15d49611",
+    "compliance/vlckit-eptv-qualification.json": "3ac216281d6a6e431a5612663a9b4fe7e91e7042b3f1faf2db21c758f8a329a9"
   },
   "qualification_date": "2026-10-07",
   "qualification_evidence": "compliance/vlckit-eptv-qualification.json",
-  "qualification_fingerprint": "c7665909c4f5f9504080dc824141dfd6cec842281ff7db9b0e4b4587a4dc049b"
+  "qualification_fingerprint": "7779b1959353dd4939fe0ef5b86957469338869d721cf1ebfbb5df543360b061"
 }

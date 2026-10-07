@@ -1,0 +1,80 @@
+{
+  "pod_name": "EPTVVLCKit",
+  "pod_version": "4.0.0a25.eptv1",
+  "vlckit_upstream_revision": "8f5ce02f09a7da5d061a24ddac3cb432f2a9b332",
+  "vlckit_revision": "46a1e01e3b6d48e427c0a6921a0e1dd9d3e9192d",
+  "vlc_base_revision": "005e69e67a8730f128e44bde68437fbb048cf45f",
+  "vlc_revision": "b8e875d4b416576fc83cf7c7193bed18eb077d82",
+  "vlc_tree": "326d7095e8cd37378d07de0521f83ba3840eedc8",
+  "minimum_os": "26.0",
+  "configuration": "Debug",
+  "status": "ENGINEERING_QUALIFICATION_PASSED",
+  "toolchain": "Xcode 27.0\nBuild version 27A266a",
+  "slices": {
+    "macos-arm64": {
+      "status": "FOCUSED_CHECK_PASSED",
+      "architectures": {
+        "arm64": {
+          "sections_sha256": "1958afee75a35bb2097be38f154f92b427aa023a345adb7b1a3773dc440da98c",
+          "load_commands_sha256": "4b587ec68288d5db075bf110b97637118d5fc231934432c59807dc4323f0c93f",
+          "linkedit_sha256": "fb08b1282d6d822b6e041da16c485b332ec1f8e1e0415225cf416b36cc2e4011",
+          "runtime_changeset": "b8e875d",
+          "runtime_version": "4.0.0-dev Otto Chriek",
+          "module_count": 293
+        }
+      }
+    },
+    "tvos-arm64": {
+      "status": "FOCUSED_CHECK_PASSED",
+      "architectures": {
+        "arm64": {
+          "sections_sha256": "195eedeb155a965e658fb7e601a69f51c5370a2df468c8b841e05288bdee1fa5",
+          "load_commands_sha256": "ccc571bdaae8ad303e8e8b6f7ea82dd27a6077fbd41d3cdbe010f9751d392e10",
+          "linkedit_sha256": "3863faec225a45995bca8fac3cc41b29e1362f9b2a8aec93c71ef2023d5b48d6",
+          "runtime_changeset": "b8e875d",
+          "runtime_version": "4.0.0-dev Otto Chriek",
+          "module_count": 288
+        }
+      }
+    },
+    "tvos-arm64-simulator": {
+      "status": "FOCUSED_CHECK_PASSED",
+      "architectures": {
+        "arm64": {
+          "sections_sha256": "e4f387f08b739d911f2e68371b2aea322bc46be8ff162601e3bd4281aa2b078b",
+          "load_commands_sha256": "7ca2bcb1c5a698ba0cab152908add00088cc69c46d9a5c02ecafe385bd857371",
+          "linkedit_sha256": "f3a80a512726bd42411d0b688180586b6a7922c1d04e5acf5dce5c080d45bbc5",
+          "runtime_changeset": "b8e875d",
+          "runtime_version": "4.0.0-dev Otto Chriek",
+          "module_count": 288
+        }
+      }
+    }
+  },
+  "transitive_notices_sha256": "c9ec6401fbb5ca7e981447700aabbe77cec599614e8d6109d82fd9ef57cc8258",
+  "podspec_checksum": "dacae5877dca57bbfd42da4c7409d98cd0cc64fa",
+  "artifact_sha256": "b5873e62bbdb6111ce3e58cbcc7a3a4de6cb6ba837179648d13479c6ae6ebbdd",
+  "source_archive_sha256": "7cedfac097bd6d30ac65f21ab800c734be37874b754ceb9c9e7af15d862d03c9",
+  "schema_version": 1,
+  "supplier": {
+    "repository": "https://github.com/crecotun/eptv-vlckit",
+    "release": "4.0.0a25.eptv1",
+    "qualification_fingerprint": "7779b1959353dd4939fe0ef5b86957469338869d721cf1ebfbb5df543360b061"
+  },
+  "installed_files": {
+    "EPTVVLCKit.podspec": "18fce35f9fd51343ca57d67159c97b7edfe82b557d5aee920ec30190fcffb40e",
+    "COPYING": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+    "TransitiveNotices.txt": "c9ec6401fbb5ca7e981447700aabbe77cec599614e8d6109d82fd9ef57cc8258"
+  },
+  "retained_artifacts": {
+    "binary": {
+      "url": "https://github.com/crecotun/eptv-vlckit/releases/download/4.0.0a25.eptv1/EPTVVLCKit.zip",
+      "publication": "LOCAL_REVIEW_CANDIDATE"
+    },
+    "source": {
+      "url": "https://github.com/crecotun/eptv-vlckit/releases/download/4.0.0a25.eptv1/EPTVVLCKit-source.zip",
+      "publication": "LOCAL_REVIEW_CANDIDATE"
+    }
+  },
+  "receipt_sha256": "791e24c263f2745ce824c71d37d29e96892815cd24edd15f585f9732f42b4382"
+}

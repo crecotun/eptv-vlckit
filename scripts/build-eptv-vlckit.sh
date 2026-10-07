@@ -43,7 +43,7 @@ for sdk in macosx appletvos appletvsimulator; do
   [[ "$sdk" != appletvsimulator ]] || platform='tvOS Simulator'
   (cd "$wrapper" && xcodebuild archive -project VLCKit.xcodeproj -scheme VLCKit \
     -sdk "$sdk" -configuration Debug -destination "generic/platform=$platform" \
-    -archivePath "build/VLCKit-$sdk.xcarchive" ARCHS=arm64 "$deployment=26.0" \
+    -archivePath "build/VLCKit-$sdk.xcarchive" -derivedDataPath "build/DerivedData-$sdk" ARCHS=arm64 "$deployment=26.0" \
     CODE_SIGNING_ALLOWED=NO SKIP_INSTALL=NO ONLY_ACTIVE_ARCH=NO)
 done
 
