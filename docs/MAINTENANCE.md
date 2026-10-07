@@ -7,7 +7,7 @@ provider inputs, credentials or personal records here.
 
 Current native inputs and engineering fingerprint are retained in
 `compliance/vlckit-eptv-build.json`; exact source trees are restored on demand from the checksummed release archive.
-The full qualification JSON and historical native records stay here. Historical logs, forensic helpers and recovery Git bundles are retained outside
+The current compact qualification JSON stays here; historical records are in the recovery bundle. Historical logs, forensic helpers and recovery Git bundles are retained outside
 this checkout in `../eptv-vlckit-retained`. Build caches and duplicate source
 extractions are disposable; retrieve current archives into ignored `downloads/`.
 The upstream CI inventory reader accepts `EPTV_APP_ROOT` only when an explicit
